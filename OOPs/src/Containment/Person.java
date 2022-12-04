@@ -1,17 +1,17 @@
 package Containment;
 
 public class Person {
-	int age;
+	int id;
 	String pname,contact;
-	IdProof id;
+	IdProof id1;
 	Person(int age,String pname,String contact,IdProof id){
-		this.age=age;
+		this.id=age;
 		this.pname=pname;
 		this.contact=contact;
-		this.id=id;
+		this.id1=id;
 		
 	}
 	public String toString(){
-		return "person Name:"+pname+" Age:"+age+" Contact:"+contact+"\nId proof details:"+id;
+		return "person Name:"+pname+" Id:"+id+" Contact:"+contact+"\nId proof details:"+id;
 	}
 }
