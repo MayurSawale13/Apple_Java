@@ -12,5 +12,6 @@ public abstract class Car {
 	}
 	abstract void price();//abstract method
 	abstract void safety();
+	abstract void alloyWheel();
 
 }

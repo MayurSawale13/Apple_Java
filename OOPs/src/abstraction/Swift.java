@@ -1,6 +1,6 @@
 package abstraction;
 
-public  class Swift extends Car{
+public abstract class Swift extends Car{
 	void feature()
 	{
 		System.out.println("extraa features");
