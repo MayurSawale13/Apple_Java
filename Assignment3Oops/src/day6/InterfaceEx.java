@@ -20,7 +20,7 @@ class Car1 implements Movealbe {
 public class InterfaceEx {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Movealbe m=new Car1();
 		m.move(140);
 		m.show();
