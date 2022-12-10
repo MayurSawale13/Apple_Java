@@ -7,8 +7,8 @@ public class AvgMarks {
 		int num=0;
 		for(int i=0;i<n;i++)
 		{
-			num=a[i];
-			sum+=num;
+			//num=a[i];
+			sum+=a[i];
 		}
 		System.out.println("Average marks:"+(sum/n));
 	}
