@@ -4,27 +4,19 @@ import java.util.Arrays;
 
 public class ReplaceNum {
 
-	void replace(char a[],int n)
-	{
-		for(int i=0;i<n;i++)
-		{	
-			if(a[i]>='a' && a[i]<='z'){
-				a[i]=((char)(a[i]-32));
+	public static void main(String[] args) {
+		
+		int a[]={10,-1,20,-2,30};
+		System.out.println(Arrays.toString(a));
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]<0)
+			{
+			a[i]=0;
+			a[i]=a[i+1]*a[i+1];//replace with next num square
 			}
-			else
-				a[i]=((char)(a[i]+32));
 		}
 		System.out.println(Arrays.toString(a));
-		
-	}
-	public static void main(String[] args) {
-		int n=6;
-		char ch[]={'a','A','b','B','c','C'};
-		ReplaceNum r= new ReplaceNum();
-		r.replace(ch, n);
-	
-	
-		
 
 	}
 
