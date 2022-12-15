@@ -1,4 +1,4 @@
-package arrays;
+package arrays_object;
 
 public class Idproof {
 	int id;
