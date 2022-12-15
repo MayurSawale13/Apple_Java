@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class MainTheatreMovie {
 
 	public static void main(String[] args) {
-		Theatre t[]=new Theatre[2];
+		Theatre t[]=new Theatre[1];
+		Movie m=new Movie();
 		Scanner sc=new Scanner(System.in);
 		for(int i=0;i<t.length;i++){
 			Movie m1[]=new Movie[2];
@@ -17,16 +18,27 @@ public class MainTheatreMovie {
 				System.out.println("Enter mid,releaseYear,mobie name");
 				int mid=sc.nextInt();
 				int roy=sc.nextInt();
-				String mname=sc.next();
-				m1[j]=new Movie(mid,roy,mname);
+				String mname1=sc.next();
+				m.setMid(mid);
+				m.setRoy(roy);
+				m.setMname(mname1);
+				m1[j]=m;
 			}
 			t[i]=new Theatre(tid,name,m1);
 		}
 		for(Theatre r:t)
+			
 		{
-			System.out.println(r);
-		}
+			
+			System.out.println(r);/*for(Movie s:r.m)
+			{
+				
+			if(s.getRoy()==2020){
+				System.out.println(s.getMname());
+		}*/
+			}
 
 	}
+	}
 
-}
+
