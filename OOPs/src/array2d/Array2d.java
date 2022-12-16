@@ -6,9 +6,9 @@ public class Array2d {
 		
 		int a[][]={{1,2,3},{5,9,8},{6,8,7}};
 		//display array
-		for(int i=0;i<a.length;i++)
+		for(int i=0;i<3;i++)
 		{
-			for(int j=0;j<a.length;j++)
+			for(int j=0;j<3;j++)
 			{
 				System.out.print(a[i][j]);
 			}
