@@ -6,7 +6,9 @@ public class SwapElements {
 		int a[]={2, 4, 9, 0};
 		for(int i=0;i<a.length;i++)
 		{
-		
+			{
+			
+			}
 		}
 	}
 
