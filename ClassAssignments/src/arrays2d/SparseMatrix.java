@@ -23,8 +23,6 @@ public class SparseMatrix {
 	else
 		System.out.println("It is not Sparse Mtrix");
 	}
-	{
-		
-	}
+	
 
 }
