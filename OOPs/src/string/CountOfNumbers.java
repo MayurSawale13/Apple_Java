@@ -3,7 +3,7 @@ package string;
 public class CountOfNumbers {
 
 	public static void main(String[] args) {
-		String c="heLlo123@#*";
+		String c="heL12lo123@#*";
 		int countAlpha=0,countNum=0, countSpe=0;
 		for(int i=0;i<c.length();i++)
 		{

@@ -13,6 +13,7 @@ public class EncrptChar {
 			System.out.println(s1[i]+"="+p);
 			sum +=s1[i]-64;
 		}
+		System.out.println(s);
 		System.out.println("potential of "+s+" : "+sum);
 
 	}
