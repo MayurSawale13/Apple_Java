@@ -8,8 +8,8 @@ public class ReplaceChar {
 		String s="language is good so is life";
 		String [] s2=s.split(" ");
 		System.out.println(s.replace('g', 'a'));
-		//String s1[]=new String[]{s+" "};
-	//
+		
+	
 		
 		
 		System.out.println(s);
