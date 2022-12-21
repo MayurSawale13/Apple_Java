@@ -8,8 +8,8 @@ public class Stuedent extends College  {
 	}
 	public void sDetails()
 	{
-		sid=54;
-		sname="Mayur";
+		sid=2;
+		sname="hgft";
 	}
 	public void sdisplay()
 	{	

@@ -21,7 +21,7 @@ public class Automoerphic {
 			else
 				System.out.println("Not");
 		
-	//	if(r==)
+	
 
 	}
 

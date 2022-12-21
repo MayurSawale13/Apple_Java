@@ -18,7 +18,7 @@ public class ProductDigitNum {
 		}
 		System.out.println("product of digit of " + n1 + "=" + prod);
 		num.close();
-
+		
 	}
 
 }

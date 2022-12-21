@@ -25,10 +25,17 @@ public class SimpleException {
 		int a=150,b=0;
 		SimpleException s=new SimpleException();
 		s.add(a, b);
+		try
+		{
+		s.divide(a,b);
+		}
+		catch(Exception e)
+		{
+			//System.out.println(e);
+			e.printStackTrace();
+		}
 		s.sub(a, b);
 		s.multiply(a, b);
-		s.divide(a,b);
-
-	}
+		}
 
 }
