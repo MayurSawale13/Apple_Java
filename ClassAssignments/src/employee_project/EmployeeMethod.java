@@ -37,8 +37,8 @@ public class EmployeeMethod {
 		int id = sc.nextInt();
 
 		for (Employee x : e) {
-			if (x.getId() == id) {
-				System.out.println("Employee Details: " + x);
+			if (x.getId() == id && e!=null) {
+				System.out.println("Employee Details:\n" + x);
 			}
 
 		}
@@ -49,10 +49,10 @@ public class EmployeeMethod {
 		int id = sc.nextInt();
 		System.out.println("Enter new Salary:");
 		float newSal = sc.nextFloat();
-		for (Employee x : e) {
-			if (x.getId() == id) {
+		for (Employee x : e ) {
+			if (x.getId() == id && e!=null) {
 				x.setSalary(newSal);
-				System.out.println("new Salary Employee Details: " + x);
+				System.out.println("new Salary Employee Details:\n" + x);
 			}
 		}
 	}
@@ -66,15 +66,26 @@ public class EmployeeMethod {
 		int j = 0, i = 0;
 		for (Employee x : e) {
 
-			if (x.getId() != id) {
-				arr[j] = e[i];
-				j++;
-
-			} else
+			if(x!=null){
+			if (x.getId() == id ) {
+				i++;
 				continue;
+				
+
+			} else{
+				arr[j] = e[i];
+					j++;
+			}
 			i++;
 		}
+		}
 		System.out.println(Arrays.toString(arr));
+		for(int k=0;k<arr.length;k++)
+		{
+			e[k]=arr[k];
+		}
+		e[arr.length]=null;
+		System.out.println(Arrays.toString(e));
 
 	}
 
@@ -86,6 +97,8 @@ public class EmployeeMethod {
 		m.viewData();
 		m.viewSpecificData();
 		m.updateData();
+		m.deleteData();
+		m.viewData();
 		m.deleteData();
 	}
 }
