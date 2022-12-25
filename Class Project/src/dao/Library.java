@@ -13,7 +13,7 @@ public class Library {
 	Book books[] = new Book[5];
 	Studen s[] = new Studen[2];
 	Transcation tr[] = new Transcation[10];
-	boolean bookAvailable=true;
+	boolean bookAvailable = true;
 	Scanner sc = new Scanner(System.in);
 
 	public Library() {
@@ -36,6 +36,7 @@ public class Library {
 	public void issueBook() {
 
 		Studen s1 = new Studen();
+		Book b = new Book();
 		System.out.println("Enter Student Details:sid,name,email,contact,dept");
 		int id = sc.nextInt();
 		String name = sc.next();
@@ -51,8 +52,8 @@ public class Library {
 			if (s[i] == null) {
 				s[i] = s1;
 				break;
-			} 
-		
+			}
+
 		}
 		Transcation t = new Transcation();
 		System.out.println("Enter bookname:");
@@ -69,31 +70,32 @@ public class Library {
 		t.setReturnDate(returnDate);
 		for (Book x1 : books) {
 			if (x1 != null) {
-				if (x1.getName().equalsIgnoreCase(bookName) && x1.getCopyno()==0) {
+				if (x1.getName().equalsIgnoreCase(bookName) && x1.getCopyno() == 0) {
 					System.out.println("Book not Available");
-					bookAvailable=false;
+					bookAvailable = false;
 					break;
 				}
-				}
-			}
-		for (int i = 0; i < tr.length; i++) {
-			if(bookAvailable==true ){
-			if (tr[i] == null) {
-				tr[i] = t;
-				t.setBookIssue(true);
-				break;
-			} 
 			}
 		}
-			
+
+			for (int i = 0; i < tr.length; i++) {
+
+				if (tr[i] == null ) {
+					tr[i] = t;
+					t.setBookIssue(true);
+					break;
+				}
+			}
+		
+
 		for (Book x : books) {
 			if (x != null) {
-				
+
 				if (x.getName().equalsIgnoreCase(bookName)) {
-					if(bookAvailable==true && x.getCopyno()>0){
+					if (bookAvailable == true && x.getCopyno() > 0) {
 						int count = x.getCopyno();
 						x.setCopyno(count - 1);
-				}
+					}
 				}
 			}
 
@@ -115,7 +117,7 @@ public class Library {
 					s.setBookIssue(false);
 					System.out.println("BookName: " + s.getBname() + " Issued on " + s.getIssueDate() + " returned by "
 							+ s.getS().getName() + " on date " + s.getReturnDate());
-					
+
 				}
 			}
 		}
@@ -151,12 +153,11 @@ public class Library {
 		for (Transcation x : tr) {
 			if (x != null) {
 				if (x.getBname().equalsIgnoreCase(bk)) {
-					if (x.isBookIssue() == true){
+					if (x.isBookIssue() == true) {
 						System.out.println(
 								x.getBname() + " is issued to " + x.getS().getName() + " on date " + x.getIssueDate());
-						System.out.println("Book Not Returned Excepted return Date till: +"+x.getReturnDate());
-					}
-					else
+						System.out.println("Book Not Returned Excepted return Date till: +" + x.getReturnDate());
+					} else
 						System.out.println(
 								x.getBname() + " returned by " + x.getS().getName() + " on date " + x.getReturnDate());
 				}

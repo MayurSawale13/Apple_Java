@@ -3,6 +3,7 @@ package pojo;
 public class Transcation {
 	private Studen s;
 	private String  bname;
+	private Book  bk;
 	
 	private String issueDate,returnDate;
 	private boolean bookIssue;
@@ -48,6 +49,14 @@ public class Transcation {
 
 	public void setBookIssue(boolean bookIssue) {
 		this.bookIssue = bookIssue;
+	}
+
+	public Book getBk() {
+		return bk;
+	}
+
+	public void setBk(Book bk) {
+		this.bk = bk;
 	}
 	
 }
