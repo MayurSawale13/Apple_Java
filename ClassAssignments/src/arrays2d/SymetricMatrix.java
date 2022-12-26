@@ -1,12 +1,14 @@
 package arrays2d;
 
+import java.util.Arrays;
+
 public class SymetricMatrix {
 
 	public static void main(String[] args) {
 		int r=3,c=3;
-		int a[][] = { { 1, 2, 3 },
-				  { 4, 5, 6 }, 
-				  { 6, 5, 7 } };
+		int a[][] = { { 1, 1, 1 },
+				  { 1, 1, 1 }, 
+				  { 1, 1, 1 } };
 		int b[][]=new int[c][r];
 		for(int i=0;i<c;i++)
 		{

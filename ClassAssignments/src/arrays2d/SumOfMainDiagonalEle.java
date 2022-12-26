@@ -13,7 +13,7 @@ public class SumOfMainDiagonalEle {
 					sum+=a[i][j];
 			}
 		}
-		System.out.println("Sumof Diagnola Elements is: "+sum);
+		System.out.println("Sum of Diagnola Elements is: "+sum);
 	}
 
 }

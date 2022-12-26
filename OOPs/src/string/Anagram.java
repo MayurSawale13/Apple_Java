@@ -6,7 +6,7 @@ public class Anagram {
 
 	public static void main(String[] args) {
 	String a="hello";
-	String b="elloh";
+	String b="olleh";
 	if(a.length()==b.length())
 	{
 		char c[]=a.toCharArray();
@@ -43,7 +43,7 @@ public class Anagram {
 		int count=0;
 		for(int i=0;i<c.length;i++)
 		{
-			if(c[i]!=d[i])
+			if(c[i]==d[i])
 			{
 				count++;
 			}

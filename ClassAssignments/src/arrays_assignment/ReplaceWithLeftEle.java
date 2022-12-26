@@ -13,5 +13,5 @@ public class ReplaceWithLeftEle {
 		}
 		System.out.println(Arrays.toString(a));
 	}
-
+ 
 }
