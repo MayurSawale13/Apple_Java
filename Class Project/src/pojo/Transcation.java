@@ -40,7 +40,7 @@ public class Transcation {
 		this.bname = bname;
 	}
 	public String toString(){
-		return " BookName:"+bname+" IssueDate:"+issueDate+" ReururnDate"+returnDate;
+		return " BookName:"+bname+" IssueDate:"+issueDate+" ReturnDate"+returnDate;
 	}
 
 	public boolean isBookIssue() {
