@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class MethodsOfArrayList1 {
+public class ArrayToList_Viceversa1 {
 
 	public static void main(String[] args) {
 		String h[]={"Hi","this","Array","not","List"};

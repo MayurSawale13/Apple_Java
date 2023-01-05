@@ -10,8 +10,8 @@ public class RemoveAndAddMethod_Iterator {
 		ArrayList<String> a=new ArrayList<>();
 		a.add("this");
 		a.add("way");
-		
 		a.add("Forward");
+		
 		//solving concurrent Exception using remove() of iterator
 		Iterator<String> it;
 		for(it=a.iterator();it.hasNext();)
@@ -22,9 +22,13 @@ public class RemoveAndAddMethod_Iterator {
 			//System.out.println(s);
 		}
 		System.out.println(a);
+		
 		//add method 
 		ListIterator<String> lit;
 		
+		for(lit=a.listIterator();lit.hasNext();){
+			System.out.println(lit.next());
+		}
 		for(lit=a.listIterator(a.size());lit.hasPrevious();)
 		{
 			if(lit.previous().contains("Forward")){
