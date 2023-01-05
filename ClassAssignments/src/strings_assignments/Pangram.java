@@ -8,8 +8,12 @@ public class Pangram {
 		boolean visited[]=new boolean[26];
 		for(int i=0;i<n;i++)
 		{
+			
 			char x=s.charAt(i);
-			if(x>='a' && x<='z')
+		/*	if(i==0){
+				System.out.print(visited[x]);
+			}*/
+				if(x>='a' && x<='z')
 				visited[x-'a']=true;
 			if(x>='A' && x<='Z')
 				visited[x-'A']=true;
@@ -25,7 +29,7 @@ public class Pangram {
 				System.out.print(visited[i]+" "+i);
 		}
 		if(flag==0)
-			System.out.println("it's a panagram");
+			System.out.println("\nit's a panagram");
 		else
 			System.out.println("it's a not  panagram");
 	}

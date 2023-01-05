@@ -14,8 +14,9 @@ public class RemoveFirstOccuanceWord {
 			if(s1[i].equals(word))
 			{
 				s1[i]="";
-				break;
+				continue;
 			}
+			System.out.print(s1[i]+" ");
 		}
 			System.out.println(Arrays.toString(s1));
 	}

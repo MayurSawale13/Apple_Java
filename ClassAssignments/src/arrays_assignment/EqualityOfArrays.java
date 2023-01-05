@@ -41,10 +41,10 @@ public class EqualityOfArrays {
 			int count=0;
 			for(int i=0;i<a.length;i++)
 			{
-				if(a[i]!=b[i])
-					break;
-				else
+				if(a[i]==b[i])
 					count++;
+				else
+					break;
 			}
 			if(count==a.length)
 				System.out.println("Arrays are equal");
@@ -52,8 +52,17 @@ public class EqualityOfArrays {
 				System.out.println("Arrays not are equal");
 
 		}
-		
+int	count=0;
+String s="java5extreme6kiu7";
 
+for(int i=0;i<s.length();i++)
+{
+	if(s.charAt(i)>='0' && s.charAt(i)<='9')
+	{
+		count++;
+	}
+}
+System.out.println("the count of number is:"+count);
 	}
 
 }

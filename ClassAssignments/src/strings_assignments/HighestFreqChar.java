@@ -1,5 +1,7 @@
 package strings_assignments;
 
+import java.util.Arrays;
+
 public class HighestFreqChar {
 
 	public static void main(String[] args) {
@@ -36,7 +38,8 @@ public class HighestFreqChar {
 
 		}
 		System.out.println("MinChar: "+minChar+"-"+min);
-		System.out.println("MaxChar: "+maxChar+"-"+max);	
+		System.out.println("MaxChar: "+maxChar+"-"+max);
+		System.out.println(Arrays.toString(ch));
 	}
 
 }
