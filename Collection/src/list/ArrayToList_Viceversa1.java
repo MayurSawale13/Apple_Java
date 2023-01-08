@@ -1,4 +1,4 @@
-package basic;
+package list;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,6 +29,8 @@ public class ArrayToList_Viceversa1 {
 		String s[]=new String[a.size()];
 		a.toArray(s);
 		System.out.println(Arrays.toString(s));
+		//3.using primitive data type
+	
 		
 		//Traverse throu to check output
 		for(String t:a1)

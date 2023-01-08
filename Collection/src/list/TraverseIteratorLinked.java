@@ -1,4 +1,4 @@
-package basic;
+package list;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -12,11 +12,11 @@ public class TraverseIteratorLinked {
 		names.add("Akhil");
 		names.add("Amit");
 		names.add("Apasra");
-		names.add("Amit");
+		names.add("Aa");
 		names.add("Balaji");
 		names.add("Casper");
 		System.out.println();
-		/*System.out.println("----Try remove all occurances(Concurrent Exception)---");
+		System.out.println("----Try remove all occurances(Concurrent Exception)---");
 		for(String s:names)
 		{
 			if(s.contains("Amit"))
@@ -24,7 +24,7 @@ public class TraverseIteratorLinked {
 				boolean b=names.remove("Amit");
 				System.out.print(b+" Removed");
 			}
-		}*/
+		}
 		System.out.println("----------Iterator traversing----");
 		Iterator<String> lis=names.iterator();
 		while(lis.hasNext())
@@ -35,6 +35,7 @@ public class TraverseIteratorLinked {
 		ListIterator <String> lls=names.listIterator();
 		while(lls.hasNext())
 		{
+		
 			System.out.println(lls.next());
 		}
 		System.out.println("-----List iterator Backwrd Traversing----");
@@ -43,6 +44,7 @@ public class TraverseIteratorLinked {
 		{
 			System.out.println(llb.previous());
 		}
+		
 	}
 
 }
