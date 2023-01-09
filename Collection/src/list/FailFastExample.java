@@ -2,6 +2,7 @@ package list;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class FailFastExample {
 
@@ -15,11 +16,20 @@ public class FailFastExample {
 	        Iterator<Integer> itr = al.iterator();
 	        while (itr.hasNext()) {
 	            if (itr.next() == 2) {
-	                 al.remove(2);
+	   //can not use arrayList add,remove method while traversing         	
+	               //  al.remove(2);
+	            	itr.remove();
 	            }
 	        }
-	        
-
+	   //iterator methods:remove,hasNext,next     
+	     //ListIterator Methods:nextIndex,hasNext,hasPrevious,previous,
+	      //-PreviousIndex,add,remove 
+	        ListIterator <Integer> li=al.listIterator();
+	        while(li.hasNext())
+	        {
+	        	int i=li.next();
+	        	System.out.println(li.nextIndex());
+	        }
 	}
 
 }
