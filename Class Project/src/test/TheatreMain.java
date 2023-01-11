@@ -26,7 +26,7 @@ public class TheatreMain {
 		ArrayList<Movie> m3=new ArrayList<>();
 		m3.add(new Movie(12,1,"Hera Pheri"));
 		m3.add(new Movie(55,3,"FightClub"));
-		m3.add(new Movie(14,1,"blidspot"));
+		m3.add(new Movie(14,1,"blnidspot"));
 		m3.add(new Movie(16,2,"no 7"));
 		m3.add(new Movie(14,5,"Ocean 11"));
 		
@@ -37,7 +37,7 @@ public class TheatreMain {
 		t.add(d2);
 		t.add(d3);
 		
-		System.out.println(d1);
+		System.out.println(t);
 		Iterator<Theatre>s=t.iterator();
 		while(s.hasNext())
 		{
