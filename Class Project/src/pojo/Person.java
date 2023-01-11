@@ -1,4 +1,6 @@
-package dao;
+package pojo;
+
+import dao.Address;
 
 public class Person {
 

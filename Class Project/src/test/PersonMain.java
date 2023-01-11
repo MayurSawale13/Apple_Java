@@ -2,8 +2,8 @@ package test;
 
 import java.util.ArrayList;
 
-import dao.Person;
-import pojo.PersonOp;
+import dao.PersonOp;
+import pojo.Person;
 
 public class PersonMain {
 

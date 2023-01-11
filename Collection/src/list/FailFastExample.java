@@ -17,7 +17,7 @@ public class FailFastExample {
 	        while (itr.hasNext()) {
 	            if (itr.next() == 2) {
 	   //can not use arrayList add,remove method while traversing         	
-	               //  al.remove(2);
+	                // al.remove(2);
 	            	itr.remove();
 	            }
 	        }

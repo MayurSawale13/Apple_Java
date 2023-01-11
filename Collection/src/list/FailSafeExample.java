@@ -14,6 +14,7 @@ public class FailSafeExample {
 		cp.add(60);
 		cp.add(10);
 		
+		
 
 	}
 
