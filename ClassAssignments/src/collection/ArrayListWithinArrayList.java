@@ -16,8 +16,6 @@ public class ArrayListWithinArrayList {
 		n1.add(13);
 		System.out.println(og.contains(11));
 		System.out.println(og.containsAll(n1));
-	
-
-	}
+		}
 
 }

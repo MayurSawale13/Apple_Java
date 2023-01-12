@@ -30,7 +30,7 @@ public class TraverseArrayList {
 		{
 			System.out.print(li.previous()+" ");
 		}
-		System.out.println("==reversing ArrayList=====");
+		System.out.println("====reversing ArrayList=====");
 		System.out.println(num);
 		Collections.reverse(num);
 		System.out.println(num);

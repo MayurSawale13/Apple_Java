@@ -28,7 +28,8 @@ public class Emp implements Comparable<Emp>{
 	}
 	public int compareTo(Emp e)
 	{
-	/*	if(this.getD().getDid()>e.getD().getDid())
+		return this.d.getName().compareTo(e.d.getName());
+		/*if(this.getD().getDid()>e.getD().getDid())
 			return 1;
 		else if(this.d.getDid()<e.getD().getDid())
 			return -1;
@@ -41,12 +42,12 @@ public class Emp implements Comparable<Emp>{
 			return -1;
 		else
 			return 0;*/
-		if(this.name.compareTo(name)==1)
+		/*if(this.name.compareTo(name)==1)
 			return 1;
 		else if(this.name.compareTo(name)==-1)
 			return -1;
 		else 
-			return 0;
+			return 0;*/
 		
 			
 		
