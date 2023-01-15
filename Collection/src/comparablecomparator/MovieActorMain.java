@@ -11,6 +11,7 @@ public class MovieActorMain {
 		a1.add(new Actor(1,"Ranbir" ));
 		a1.add(new Actor(3,"Alia" ));
 		m1.add(new Movie(5,"Bramhastra",a1));
+		
 		ArrayList<Actor>a2=new ArrayList<>();
 		a2.add(new Actor(2,"Amitabh" ));
 		a2.add(new Actor(1,"Srk" ));
@@ -18,12 +19,12 @@ public class MovieActorMain {
 		a2.add(new Actor(4,"Kajol" ));
 		a2.add(new Actor(5,"Kareena" ));
 		m1.add(new Movie(7,"K3G",a2));
+		
 		ArrayList<Actor>a3=new ArrayList<>();
 		a3.add(new Actor(1,"Yash" ));
 		a3.add(new Actor(2,"Sanjay" ));
 		a3.add(new Actor(4,"Ravvena" ));
 		a3.add(new Actor(3,"Srineedhi" ));
-		
 		m1.add(new Movie(2,"KGF",a3));
 	}
 	
@@ -40,5 +41,4 @@ public class MovieActorMain {
 			System.out.println(s);
 		}
 	}
-
 }
