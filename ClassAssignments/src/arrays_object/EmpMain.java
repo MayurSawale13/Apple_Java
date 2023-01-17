@@ -63,6 +63,10 @@ public class EmpMain {
 	void duplicateDept(Emp e1[])
 	{
 		Emp e2[]=new Emp[e1.length];
+		/*for(Emp e:e1)
+		{
+			if(e2.conat)
+		}*/
 		for(int i=0;i<e1.length;i++)
 		{
 			int count=1;
@@ -70,14 +74,15 @@ public class EmpMain {
 			{
 				if(e1[i].getD().dname.equalsIgnoreCase(e1[j].getD().dname))
 				{
-					e2[i]=e1[j];
-				}
-				count++;
-				if(e2[i]==null){
-				if(count==2)
+					count++;
+					
 					e2[i]=e1[i];
 				}
+				
+				else if(count==2)
+					e2[i]=e1[i];
 				}
+				
 		}
 		System.out.println(Arrays.toString(e2));
 	}

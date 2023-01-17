@@ -1,29 +1,33 @@
 package written;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Map;
 
 public class NumberHashMap {
 
 	public static void main(String[] args) {
-		LinkedList<Integer> ll = new LinkedList<>();
-		ll.add(1);
-		ll.add(4);
-		ll.add(2);
-		ll.add(1);
-		ll.add(3);
-		ll.add(1);
-		ll.add(4);
+		ArrayList<Integer> al = new ArrayList<>();
+		al.add(1);
+		al.add(4);
+		al.add(2);
+		al.add(1);
+		al.add(3);
+		al.add(1);
+		al.add(4);
 		HashMap<Integer, Integer> hm = new HashMap<>();
-		for (Integer x : ll) {
-			if (hm.containsKey(x)) {
-				int v = hm.get(x);
+		for (Integer x : al) {
+			
+			if (!hm.containsKey(x)) {
+				int v = hm.getOrDefault(x, 1);
 				v = v + 1;
 				hm.put(x, v);
-			} else
-				hm.put(x, 1);
+				
+			} 
+				
 		}
 		System.out.println(hm);
 
