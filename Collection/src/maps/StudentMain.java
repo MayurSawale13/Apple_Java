@@ -8,7 +8,7 @@ public class StudentMain {
 		hm.put(new Student(17,"shiv","civil",67),36);
 		hm.put(new Student(24,"ankita","ec",87),9);
 		hm.put(new Student(11,"ankit","cs",63),8);
-		hm.put(new Student(19,"Kamlesh","mech",80),6);
+		hm.put(new Student(19,"Kamleh","mech",80),6);
 		hm.put(new Student(23,"ramesh","civil",65),12);
 		hm.put(new Student(23,"Kamlesh","civil",65),12);
 	}
