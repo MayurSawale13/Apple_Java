@@ -7,7 +7,7 @@ import java.util.TreeSet;
 
 public class SetExample {
 	//1.Hash Set:random order
-	//2.:inked Hashset-inserting order
+	//2.Linked Hashset-inserting order
 	//3.TreeSet:sorted order
 
 	public static void main(String[] args) {
