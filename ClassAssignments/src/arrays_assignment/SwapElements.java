@@ -8,8 +8,8 @@ public class SwapElements {
 		for(int i=0;i<mid;i++)
 		{
 			int temp=a[i];
-			a[i]=a[mid+i+1];
-			a[mid+i+1]=temp;
+			a[i]=a[mid+i];
+			a[mid+i]=temp;
 		}
 	for(int e:a)
 	{

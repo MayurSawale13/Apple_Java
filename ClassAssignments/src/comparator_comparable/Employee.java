@@ -19,7 +19,8 @@ public class Employee implements Comparable<Employee>{
 		return id + " " + name + " " + dept + " " + age;
 	}
 	public int compareTo(Employee o){
-		if(this.name.compareTo(o.name)==0){
+		if(this.name.compareTo(o.name)==0)
+		{
 		if(this.id>o.id)
 			return 1;
 		else if(this.id<o.id)

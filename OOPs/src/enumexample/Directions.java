@@ -4,7 +4,7 @@ public enum Directions {
 	EAST,WEST,SOUTH,NORTH;
 	Directions()
 	{
-		System.out.println("1");
+		System.out.println("East");
 	}
 
 }

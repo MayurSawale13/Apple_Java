@@ -7,11 +7,11 @@ import java.util.Collections;
 number such that new array is sorted array and 
 there should be no duplicate in new array.*/
 public class SortedArrayListWithNoDupli {
-	void addEle(ArrayList<Integer> al2,ArrayList<Integer> al3){
-		al2.add(10);
-		al2.add(50);
-		al2.add(44);
-		al2.add(30);
+	void addEle(ArrayList<Integer> al4,ArrayList<Integer> al3){
+		al4.add(10);
+		al4.add(50);
+		al4.add(44);
+		al4.add(30);
 		al3.add(10);
 		al3.add(78);
 		al3.add(30);

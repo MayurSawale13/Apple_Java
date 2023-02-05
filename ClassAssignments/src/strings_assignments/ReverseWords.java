@@ -18,9 +18,6 @@ public class ReverseWords {
 		ReverseWords r=new ReverseWords();
 		String s="hello world";
 		r.reverseWord(s);
-		
-		
-
 	}
 
 }

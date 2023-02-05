@@ -18,7 +18,8 @@ public static void main(String[] args) {
 	al1.add(63);
 	al1.add(64);
 	al1.add(65);
-	al.clear();
+	//al.clear();
+	
 	System.out.println(al);
 	System.out.println(al1.containsAll(al));
 	System.out.println(al.get(2));

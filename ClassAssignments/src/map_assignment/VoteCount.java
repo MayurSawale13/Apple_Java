@@ -36,7 +36,9 @@ public class VoteCount {
 		LinkedHashMap<String, String> lh = new LinkedHashMap<>();
 		LinkedHashMap<String, Integer> vc = new LinkedHashMap<>();
 		VoteCount v = new VoteCount();
+	
 		v.addEle(lh);
+		System.out.println(lh);
 		v.voteCount(lh, vc);
 		System.out.println(vc);
 	}

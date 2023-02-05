@@ -9,11 +9,11 @@ import java.util.HashMap;
 Then Map would be like this :{{ParleG, 15},{GoodDay,40}}*/
 public class ArrayListToMap {
 	void create(ArrayList<Item> al) {
-		al.add(new Item(15, "Parle G", 3, 20));
-		al.add(new Item(15, "Hide n seek", 1, 15));
-		al.add(new Item(15, "Parle G", 4, 10));
-		al.add(new Item(15, "Good Day", 3, 30));
-		al.add(new Item(15, "Good Day", 2, 20));
+		al.add(new Item(15, "Parle G", 10, 20));
+		//al.add(new Item(15, "Hide n seek", 1, 15));
+		al.add(new Item(15, "Parle G", 5, 10));
+		al.add(new Item(15, "Good Day", 10, 30));
+		al.add(new Item(15, "Good Day", 30, 20));
 	}
 
 	void addMap(ArrayList<Item> al) {

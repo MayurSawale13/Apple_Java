@@ -22,15 +22,16 @@ public class Library {
 		books[2] = new Book(1003, 3, "Java", "madhu pillai");
 		books[3] = new Book(1045, 5, "History", "ram chandra guha");
 		books[4] = new Book(1005, 0, "Geography", "prabhu k");
+	
 	}
 
 	public void viewBooks() {
 		for (Book x : books) {
 			System.out.println(x);
 		}
-		for (Transcation x : tr) {
+	/*	for (Transcation x : tr) {
 			System.out.println(x);
-		}
+		}*/
 	}
 
 	public void issueBook() {
@@ -165,3 +166,4 @@ public class Library {
 		}
 	}
 }
+

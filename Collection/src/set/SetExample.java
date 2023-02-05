@@ -55,6 +55,7 @@ public class SetExample {
 		System.out.println("Last:"+ts.last());
 		System.out.println("Floor:"+ts.floor(50));
 		System.out.println("Ceiling:"+ts.ceiling(35));
+		System.out.println(hs.toArray());
 	}
 
 }
