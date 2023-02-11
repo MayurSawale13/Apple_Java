@@ -16,10 +16,10 @@ public class Student implements Cloneable {
 	}
 	public Object clone() throws CloneNotSupportedException
 	{
-		/*Student s=(Student) super.clone();
+		Student s=(Student) super.clone();
 		s.al=(ArrayList<Integer>) al.clone();
-		return s;*/
-		 return super.clone();//for shallow copy
+		return s;
+		 //return super.clone();//for shallow copy
 	}
 	
 

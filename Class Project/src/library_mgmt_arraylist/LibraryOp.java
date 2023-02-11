@@ -23,7 +23,7 @@ public class LibraryOp {
 		stu.add(new Student(106, "vidhya", "845647456", "cs"));
 		stu.add(new Student(107, "joe", "985674564", "MBA"));
 	}
-
+	
 	public void display() {
 		for (Book b : books)
 			System.out.println(b);
@@ -105,13 +105,11 @@ public class LibraryOp {
 		}
 		
 	}
-	
-
 	void checkBookDetails() {
 		System.out.println("Enter book id ");
 		int bid = sc.nextInt();
-		for (Transaction t : tr) {
-			if (t.b.bid == bid) {
+		for (Transaction t : tr){
+			if (t.b.bid == bid){
 				System.out.println(t.s.sname + " " + t.b.bname);
 			}
 		}

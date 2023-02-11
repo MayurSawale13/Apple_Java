@@ -5,12 +5,15 @@ import java.util.Scanner;
 public class ArrayString {
 
 	public static void main(String[] args) {
-		String s1=""; //0					1		2		
+		String s1=""; //0	5			4	1	3	2		
 		String s[]={"lionel messi","di maria","paulo dybala"};
+		
 		Scanner sc=new Scanner(System.in);
 		for(int i=0;i<s.length;i++)
 		{
 			int flag=0;
+			
+			int count=0;
 			char [] x=s[i].toCharArray();
 			for(int j=0;j<x.length;j++)
 			{
