@@ -16,7 +16,6 @@ public class StackEx {
 	public static void main(String[] args) {
 		Stack<Integer> s=new Stack<>();
 		StackEx g=new StackEx();
-
 	}
 
 }

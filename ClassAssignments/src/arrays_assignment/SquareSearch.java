@@ -12,6 +12,7 @@ public class SquareSearch {
 			int sqr = (int) Math.sqrt(a[i]);
 			if (a[i] == sqr * sqr && a[i] > 0)
 				System.out.print(a[i] + " ");
+			System.out.println((char)72);
 
 		}
 	}
