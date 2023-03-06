@@ -3,8 +3,12 @@ package oops_basic;
 import java.util.Scanner;
 
 public class Car {
+	
 	int speed,price;
 	String color,mop,name;
+	//float dis;
+	
+	
 	void setData()
 	{
 		Scanner sc=new Scanner(System.in);
@@ -18,13 +22,11 @@ public class Car {
 		mop=sc.next();
 		System.out.println("Enter speed: ");
 		speed=sc.nextInt();
-		
-		
-		
+			
 	}
-	void discount()
+	float discount()
 	{
-		float dis;
+		float dis=0;
 		if(mop.equalsIgnoreCase("online"))
 		{
 			dis=price*0.03f;
@@ -37,15 +39,18 @@ public class Car {
 			System.out.println("discount is: "+dis);
 			System.out.println("price after discount: "+(price-dis));
 		}
+		return dis;
 	}
 	void display()
 	{
-		System.out.println("Car Name: "+name+"\nmax. speed: "+speed+"\ncolor: "+color+"\nprice: "+price+"\nMode of payment: "+mop);
+		float d=discount();
+		System.out.println("Car Name: "+name+"\nmax. speed: "+speed+"\ncolor: "+color+"\nprice: "+price+"\nMode of payment: "+mop+"");
 	}
 
 	public static void main(String[] args) {
 		
 		Car c=new Car();
+	
 		c.setData();
 		c.display();
 		c.discount();

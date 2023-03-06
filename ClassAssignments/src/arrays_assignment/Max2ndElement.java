@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Max2ndElement {
+	int min=Integer.MAX_VALUE;
      void secondHighest(int a[]){
     	 for(int i=0;i<a.length;i++)
  		{
