@@ -18,6 +18,8 @@ public class TreeMapExample {
 		TreeMap<Integer,String>tm=new TreeMap<>();
 		TreeMapExample t=new TreeMapExample();
 		t.createHash(tm);
+		//System.out.println(tm.firstEntry());
+		//tm.remove(tm.firstKey());
 		for(Map.Entry<Integer,String> c:tm.entrySet())
 		{
 			System.out.print(c+" ");

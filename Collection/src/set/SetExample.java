@@ -40,6 +40,7 @@ public class SetExample {
 		ts.add(70);
 		System.out.println(ts);
 		
+		System.out.println(ts.comparator());
 		System.out.println("Traversing:");
 		Iterator<Integer> itr=hs.iterator();
 		while(itr.hasNext())
@@ -47,7 +48,7 @@ public class SetExample {
 			System.out.print(itr.next()+" ");
 		}
 		System.out.println("\n");
-		for(Integer i:hs)
+		for(Integer i:ts)
 		{
 			System.out.print(i+" ");
 		}
